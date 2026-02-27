@@ -83,6 +83,26 @@ Contains 100k+ real orders from 2016-2018 including:
 - [ ] App deployed to Streamlit Cloud
 
 ---
+## Project Directory Tree
+ecominsight-ai/
+│
+├── data/
+│   ├── raw/                 ← original Olist CSV files (not tracked by Git)
+│   └── processed/           ← cleaned and merged data ready for analysis
+│
+├── notebooks/
+│   └── exploration.ipynb    ← exploratory data analysis and schema documentation
+│
+├── src/
+│   ├── clean_data.py        ← data ingestion, null handling, and preprocessing
+│   ├── charts.py            ← all Plotly visualization functions
+│   └── ai_chat.py           ← OpenAI API integration and natural language Q&A
+│
+├── app.py                   ← main Streamlit application entry point
+├── requirements.txt         ← project dependencies (pip install -r requirements.txt)
+├── .gitignore               ← excludes API keys, cache, and raw data from GitHub
+├── .env                     ← local environment variables (not included in repo)
+└── README.md                ← project overview and documentation
 
 ## 🚀 How to Run Locally
 ```bash
